@@ -1,0 +1,39 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Links</title>
+</head>
+
+<body background="images/bkgde.gif">
+
+<script type="text/javascript">
+  function preload(img) 
+  {
+    var a=new Image(); a.src=img; return a; 
+  }
+
+  but1_a=preload("images/f_btn_a.gif");
+  but1_b=preload("images/f_btn_b.gif");
+  but4_a=preload("images/h_btn_a.gif");
+  but4_b=preload("images/h_btn_b.gif");
+</script>
+
+<p style="margin-top: 80">
+<a href="ficha.htm" language="javascript"
+   onmouseover="document['lnk1'].src=but1_b.src"
+   onmouseout="document['lnk1'].src=but1_a.src"
+   target="main">
+<img src="images/f_btn_a.gif" height="50" border="0" alt="Description" name="lnk1"></a>
+</p>
+<p>
+<p>
+<a href="main.htm" language="javascript" 
+   onmouseover="document['lnk4'].src=but4_b.src"
+   onmouseout="document['lnk4'].src=but4_a.src"
+   target="main">
+<img src="images/h_btn_a.gif" height="50" border="0" alt="Home" name="lnk4"></a>
+</p>
+
+</body>
+</html>
